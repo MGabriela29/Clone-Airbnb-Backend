@@ -6,7 +6,7 @@ from django.db import models
 
 
 class CustomUserManager(UserManager):
-    def _craete_user(self, name , email, password, **extra_fields):
+    def _create_user(self, name , email, password, **extra_fields):
         if not email:
             raise ValueError('You have not specified a valid e-mail address')
 
